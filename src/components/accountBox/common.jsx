@@ -1,11 +1,13 @@
 import styled from "styled-components";
 
+
 export const BoxContainer = styled.div`
   width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
   margin-top: 10px;
+  margin-bottom: 20px;
 `;
 
 export const FormContainer = styled.form`
@@ -42,6 +44,7 @@ export const Input = styled.input`
   border-bottom: 1.4px solid transparent;
   transition: all 200ms ease-in-out;
   font-size: 12px;
+  border-radius: 12px;
 
   &::placeholder {
     color: rgba(200, 200, 200, 1);
@@ -60,7 +63,7 @@ export const Input = styled.input`
 export const SubmitButton = styled.button`
   width: 100%;
   padding: 11px 40%;
-  color: #fff;
+  color: #ffffff;
   font-size: 15px;
   font-weight: 600;
   border: none;

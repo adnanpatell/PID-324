@@ -1,6 +1,7 @@
 import "./App.css";
 import styled from "styled-components";
 import { AccountBox } from "./components/accountBox";
+import LoginInfo from "./components/LoginInfo";
 
 const AppContainer = styled.div`
   width: 100%;
@@ -13,8 +14,11 @@ const AppContainer = styled.div`
 
 function App() {
   return (
-    <AppContainer>
-      <AccountBox />
+      <AppContainer>
+        <div className="main">
+          <div className="details"><LoginInfo/></div>
+          <div className="form"><AccountBox /></div>
+        </div>
     </AppContainer>
   );
 }

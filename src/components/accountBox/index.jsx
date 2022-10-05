@@ -11,12 +11,13 @@ const BoxContainer = styled.div`
   display: flex;
   flex-direction: column;
   border-radius: 19px;
-  background-color: #9AFBD3;
+  background-color: rgb(143 143 143 / 35%);
   box-shadow: 0 0 2px rgba(15, 15, 15, 0.28);
   position: relative;
   overflow: hidden;
 `;
 //bg-color #9AFBD3
+
 const TopContainer = styled.div`
   width: 100%;
   height: 250px;
@@ -40,12 +41,15 @@ const BackDrop = styled(motion.div)`
   background: rgb(143, 0, 255);
   background: linear-gradient(
     58deg,
-    rgba(143, 0, 255, 1) 20%,
-    rgba(143, 0, 255, 1) 100%
+    rgb(0 161 82 / 78%) 20%, 
+    rgb(143 0 255) 100% );
+    
   );
 `;
+// rgba(143, 0, 255, 1) 20%,
+// rgba(143, 0, 255, 1) 100%
 
-const HeaderContainer = styled.div`
+    const HeaderContainer = styled.div`
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -75,7 +79,7 @@ const InnerContainer = styled.div`
   width: 100%;
   display: flex;
   flex-direction: column;
-  padding: 0 1.8em;
+  padding: 0 1.4em;
 `;
 
 const backdropVariants = {
